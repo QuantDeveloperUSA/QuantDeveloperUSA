@@ -25,7 +25,7 @@ Highly accomplished and results-oriented **Quant Researcher & Developer** with 7
 
 ## 💼 Experience
 
-### **Citigroup / Citibank**  
+### <img src="https://logos-world.net/wp-content/uploads/2021/02/Citigroup-Logo.png" alt="Citigroup" width="30" height="15"> **Citigroup / Citibank**
 *Quantitative Developer AI Focused*  
 _Mar 2025 – Present_
 
@@ -42,7 +42,7 @@ _Mar 2025 – Present_
 
 ---
 
-### **ABFS TECH**  
+### <img src="https://www.abfs.tech/wp-content/uploads/2022/06/cropped-abfs-tech-600px.png" alt="ABFS TECH" width="45" height="15"> **ABFS TECH**
 *Quant Researcher & Developer (Full-Time)*  
 _March 2016 – Present_
 
@@ -55,10 +55,11 @@ _March 2016 – Present_
 - Integrated financial platforms, built smartphone applications, connected systems within financial markets.
 - Extensive expertise with AWS cloud computing solutions.
 - Worked closely with Portfolio Managers, Front Office, Middle Office, Back Office, and teams from multiple Hedge Funds, Family Offices, Banks, and other financial institutions.
+- **Provided quant research, development, and technology services to multiple clients across the financial markets, collaborating and delivering solutions tailored for each client’s unique requirements, diverse asset classes, and business strategies.**
 
 ---
 
-### **T3 Trading Group**  
+### <img src="https://t3trading.com/wp-content/uploads/2021/03/t3-trading-logo-1024-x1024.png" alt="T3 Trading Group" width="23" height="23"> **T3 Trading Group**
 *Quant Researcher & Developer (Part-Time)*  
 _Feb 2019 – Dec 2019_
 
@@ -69,7 +70,7 @@ _Feb 2019 – Dec 2019_
 
 ---
 
-### **Brinpa Investments and Participations**  
+### **Brinpa Investments and Participations**
 *Investments Director (Part-Time)*  
 _Jan 2006 – Jun 2015_
 
