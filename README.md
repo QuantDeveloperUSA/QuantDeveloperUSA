@@ -14,6 +14,7 @@
 | **Website** | [www.abfs.tech](https://www.abfs.tech) |
 | **LinkedIn** | [linkedin.com/in/robertoeisenlohr](https://www.linkedin.com/in/robertoeisenlohr/) |
 | **Portfolio** | [linkedin.com/in/robertoeisenlohr/details/projects/](https://www.linkedin.com/in/robertoeisenlohr/details/projects/) |
+| **Location** | Manhattan, New York, NY |
 
 ---
 
