@@ -2,7 +2,7 @@
 
 ---
 
-## 🌟 Quant Researcher & Developer – AI Driven Solutions
+## 🌟 Quant Researcher & Developer – AI Architect
 
 ---
 
