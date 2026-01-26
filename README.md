@@ -1,8 +1,8 @@
-﻿# Robert Eisenlohr
+# Roberto Eisenlohr
 
 ---
 
-## 🌟 AI Solutions Architect – Enterprise Financial Systems
+## 🌟 AI Solutions Architect | Quant Researcher & Developer | Enterprise Financial Systems
 
 ---
 
@@ -134,7 +134,7 @@ _Jan 2006 – Jun 2015_
 `VaR (Value at Risk)`, `CVaR (Conditional Value at Risk)`, `Greeks Analysis (Delta, Gamma, Theta, Vega)`, `Scenario Analysis`, `Stress Testing`, `Drawdown Control`, `Position Sizing`
 
 **Artificial Intelligence (AI):**  
-`Machine Learning`, `AI Trading Systems`, `Predictive Modeling`, `Neural Networks`, `Model Optimization`, `Deep Learning`, `Natural Language Processing`, `Large Language Models (LLM)`, `Generative AI (GenAI)`, `Agentic AI`, `LangGraph`, `MCP Protocol`
+`Machine Learning`, `AI Trading Systems`, `Predictive Modeling`, `Neural Networks`, `Model Optimization`, `Deep Learning`, `Natural Language Processing`, `Large Language Models (LLM)`, `Generative AI (GenAI)`, `Agentic AI`, `LangGraph`, `LangChain`, `LangSmith`, `Model Context Protocol (MCP)`
 
 **Financial Expertise:**  
 `Financial Engineering`, `Quantitative Finance`, `Financial Modeling`, `Cryptocurrency Trading`, `Forex Trading`, `Equities`, `CFDs`, `Portfolio Management`, `Financial Analysis`, `Equity Options`, `Stocks`, `Futures`, `Futures Options`, `Credit Instruments`, `Currencies`
