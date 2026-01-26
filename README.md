@@ -92,7 +92,7 @@ _Jan 2006 – Jun 2015_
 `Algorithmic Trading`, `Quantitative Research`, `Mathematical Modeling`, `Statistical Analysis`, `Risk Management`, `Portfolio Optimization`, `Backtesting`, `Derivatives Pricing`, `Monte Carlo Simulation`, `Time Series Analysis`, `Financial Algorithms`, `Options & Futures`, `ETFs & Indexes`, `Pearson Correlation Analysis`
 
 **Artificial Intelligence (AI):**  
-`Machine Learning`, `AI Trading Systems`, `Predictive Modeling`, `Neural Networks`, `Model Optimization`, `Deep Learning`, `Natural Language Processing`, `Large Language Models (LLM)`, `Generative AI (GenAI)`, `Agentic AI`, `LangGraph`
+`Machine Learning`, `AI Trading Systems`, `Predictive Modeling`, `Neural Networks`, `Model Optimization`, `Deep Learning`, `Natural Language Processing`, `Large Language Models (LLM)`, `Generative AI (GenAI)`, `Agentic AI`, `LangGraph`, `LangChain`
 
 **Financial Expertise:**  
 `Financial Engineering`, `Quantitative Finance`, `Financial Modeling`, `Cryptocurrency Trading`, `Forex Trading`, `Equities`, `CFDs`, `Portfolio Management`, `Financial Analysis`, `Equity Options`, `Stocks`, `Futures`, `Futures Options`, `Credit Instruments`, `Currencies`
