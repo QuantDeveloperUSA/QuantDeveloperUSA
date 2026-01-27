@@ -173,6 +173,7 @@ _Jan 2006 – Jun 2015_
 ### AI & Machine Learning Certifications
 | **Certification / License** | **Issuing Organization** | **Date** |
 |----------------------------|----------------------------|----------|
+| Model Context Protocol: Advanced Topics | Anthropic | Jan 2026 |
 | Beyond Vibe Coding with Google Gemini: Become a Deliberate Developer | LinkedIn Learning | Dec 2025 |
 | AI Agent Engineer | SmythOS | Sep 2024 |
 | Harvard University Certification, Artificial Intelligence in Python | Harvard University | Jan 2024 |
