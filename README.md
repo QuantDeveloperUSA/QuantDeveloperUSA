@@ -69,6 +69,7 @@ _March 2016 – Present_
 - Integrated financial platforms, built smartphone applications, connected systems within financial markets.
 - Extensive expertise with AWS cloud computing solutions.
 - Worked closely with Portfolio Managers, Front Office, Middle Office, Back Office, and teams from multiple Hedge Funds, Family Offices, Banks, and other financial institutions.
+- Automated anomaly detection and root cause analysis using GenAI.
 - **Provided quant research, development, and technology services to multiple clients across the financial markets, collaborating and delivering solutions tailored for each client's unique requirements, diverse asset classes, and business strategies.**
 
 ---
@@ -102,6 +103,16 @@ _Jan 2006 – Jun 2015_
 
 - Managed early-stage investments, following up through final payout.
 - Responsible for performance analysis and investment project selection.
+
+---
+
+### AEP Engineering 
+Lead Engineer
+_Jan 2002 – Dec 2014_
+
+- Led a team of Engineers that designed, implemented, and maintained ISO 9000 and other Quality Assurance certifications with regular external audits, as a requirement for the Engineering firm to work with a bank.
+- Built tools and dashboards to visualize and communicate data quality, performance monitoring, and insights.
+- Strong knowledge in statistics, probabilities, statistical analysis, and probabilistic analysis.
 
 ---
 
