@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberto Eisenlohr - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a365d;
+            --primary-light: #2c5282;
+            --accent: #3182ce;
+            --accent-light: #4299e1;
+            --text-dark: #1a202c;
+            --text-medium: #4a5568;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --bg-white: #ffffff;
+            --border-light: #e2e8f0;
+            --border-medium: #cbd5e0;
+            --success: #38a169;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: var(--text-dark);
+            background: var(--bg-white);
+        }
+
+        .container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.4in 0.5in;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding-bottom: 16px;
+            border-bottom: 3px solid var(--primary);
+            margin-bottom: 16px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 32pt;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .header .tagline {
+            font-size: 12pt;
+            font-weight: 500;
+            color: var(--accent);
+            letter-spacing: 0.5px;
+        }
+
+        /* Contact Bar */
+        .contact-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px 20px;
+            padding: 12px 0;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            margin: 0 -0.5in;
+            padding-left: 0.5in;
+            padding-right: 0.5in;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 9pt;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-icon {
+            font-weight: 600;
+            opacity: 0.9;
+        }
+
+        /* Section Styling */
+        .section {
+            margin-top: 16px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 13pt;
+            font-weight: 600;
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-icon {
+            font-size: 14pt;
+        }
+
+        /* Summary Section */
+        .summary-content {
+            text-align: justify;
+            color: var(--text-medium);
+            font-size: 9.5pt;
+            line-height: 1.6;
+        }
+
+        .summary-content p {
+            margin-bottom: 8px;
+        }
+
+        .summary-highlight {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .core-expertise {
+            background: var(--bg-light);
+            padding: 10px 14px;
+            border-radius: 6px;
+            margin: 10px 0;
+            border-left: 4px solid var(--accent);
+        }
+
+        .core-expertise h4 {
+            font-size: 10pt;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .expertise-list {
+            list-style: none;
+            font-size: 9pt;
+        }
+
+        .expertise-list li {
+            margin-bottom: 3px;
+            padding-left: 12px;
+            position: relative;
+        }
+
+        .expertise-list li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .credentials {
+            font-size: 9pt;
+            color: var(--text-medium);
+            font-style: italic;
+            margin-top: 8px;
+        }
+
+        /* Experience Section */
+        .experience-item {
+            margin-bottom: 14px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 6px;
+        }
+
+        .company-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .company-logo {
+            height: 18px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .company-name {
+            font-size: 11pt;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .job-title {
+            font-size: 10pt;
+            font-weight: 500;
+            color: var(--accent);
+            font-style: italic;
+        }
+
+        .job-dates {
+            font-size: 9pt;
+            color: var(--text-light);
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .experience-bullets {
+            list-style: none;
+            font-size: 9pt;
+            color: var(--text-medium);
+            margin-top: 6px;
+        }
+
+        .experience-bullets li {
+            margin-bottom: 3px;
+            padding-left: 14px;
+            position: relative;
+            line-height: 1.45;
+        }
+
+        .experience-bullets li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .experience-bullets li strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        /* Achievements Section */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .achievement-item {
+            background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+            padding: 10px 12px;
+            border-radius: 6px;
+            border-left: 3px solid var(--success);
+            font-size: 9pt;
+            color: var(--text-medium);
+        }
+
+        .achievement-item strong {
+            color: var(--primary);
+            display: block;
+            margin-bottom: 2px;
+            font-size: 9.5pt;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .skill-category {
+            background: var(--bg-light);
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .skill-category h4 {
+            font-size: 9.5pt;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 6px;
+            border-bottom: 1px solid var(--border-medium);
+            padding-bottom: 4px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .skill-tag {
+            background: var(--bg-white);
+            color: var(--text-medium);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 8pt;
+            border: 1px solid var(--border-light);
+        }
+
+        /* Education Section */
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .education-item {
+            background: var(--bg-light);
+            padding: 10px;
+            border-radius: 6px;
+            border-top: 3px solid var(--accent);
+        }
+
+        .education-item h4 {
+            font-size: 10pt;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .education-item .degree {
+            font-size: 9pt;
+            color: var(--text-medium);
+            font-style: italic;
+        }
+
+        .education-item .year {
+            font-size: 8.5pt;
+            color: var(--text-light);
+            margin-top: 3px;
+        }
+
+        /* Certifications Section */
+        .cert-section {
+            margin-bottom: 12px;
+        }
+
+        .cert-section h4 {
+            font-size: 10pt;
+            font-weight: 600;
+            color: var(--primary-light);
+            margin-bottom: 6px;
+            padding-bottom: 3px;
+            border-bottom: 1px dashed var(--border-medium);
+        }
+
+        .cert-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8.5pt;
+        }
+
+        .cert-table th {
+            background: var(--primary);
+            color: white;
+            padding: 5px 8px;
+            text-align: left;
+            font-weight: 500;
+        }
+
+        .cert-table td {
+            padding: 4px 8px;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--text-medium);
+        }
+
+        .cert-table tr:nth-child(even) {
+            background: var(--bg-light);
+        }
+
+        .cert-compact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .cert-badge {
+            background: var(--bg-light);
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 8pt;
+            color: var(--text-medium);
+            border: 1px solid var(--border-light);
+        }
+
+        .cert-total {
+            text-align: center;
+            font-size: 10pt;
+            font-weight: 600;
+            color: var(--primary);
+            margin-top: 10px;
+            padding: 8px;
+            background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+            border-radius: 6px;
+            border: 2px solid var(--accent);
+        }
+
+        /* Publications Section */
+        .publication-item {
+            background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+            padding: 12px 16px;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .publication-item h4 {
+            font-size: 10.5pt;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .publication-details {
+            font-size: 9pt;
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        .publication-details a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .publication-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                font-size: 9.5pt;
+            }
+            
+            .container {
+                max-width: 100%;
+                padding: 0.3in 0.4in;
+            }
+            
+            .contact-bar {
+                margin: 0 -0.4in;
+                padding-left: 0.4in;
+                padding-right: 0.4in;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        /* Additional responsive adjustments */
+        @page {
+            margin: 0.3in;
+            size: letter;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Roberto Eisenlohr</h1>
+            <p class="tagline">🌟 AI Solutions Architect | Quant Researcher & Developer | Enterprise Financial Systems</p>
+        </header>
+
+        <!-- Contact Bar -->
+        <div class="contact-bar">
+            <div class="contact-item">
+                <span class="contact-icon">📞</span>
+                <span>+1 (347) 688-8396</span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">✉</span>
+                <a href="mailto:admin@abfs.tech">admin@abfs.tech</a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">🌐</span>
+                <a href="https://www.abfs.tech">www.abfs.tech</a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">💼</span>
+                <a href="https://www.linkedin.com/in/robertoeisenlohr/">linkedin.com/in/robertoeisenlohr</a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">📁</span>
+                <a href="https://www.linkedin.com/in/robertoeisenlohr/details/projects/">Portfolio</a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <span>Manhattan, New York, NY</span>
+            </div>
+        </div>
+
+        <!-- Summary Section -->
+        <section class="section">
+            <h2 class="section-title"><span class="section-icon">📋</span> Summary</h2>
+            <div class="summary-content">
+                <p>AI Solutions Architect with 23+ years of experience as a professional Engineer. Building production systems at the intersection of <span class="summary-highlight">artificial intelligence</span> and <span class="summary-highlight">financial markets</span>. Recently completed an 11-month engagement at <span class="summary-highlight">Citigroup</span> where I led development of an enterprise GenAI Ecosystem for portfolio analysis — serving C-level operations across equities, options, currencies, and futures.</p>
+                
+                <div class="core-expertise">
+                    <h4>Core Expertise:</h4>
+                    <ul class="expertise-list">
+                        <li><strong>Agentic AI Systems</strong> — LangGraph cyclic reasoning, multi-model orchestration (Gemini, Claude, Grok, Ollama), MCP server integration</li>
+                        <li><strong>Financial Domain</strong> — Portfolio analysis, risk assessment, regulatory compliance, algorithmic trading</li>
+                        <li><strong>Full-Stack Delivery</strong> — Architecture → Development → Deployment → Monitoring (Python, AWS, Docker, FastAPI)</li>
+                    </ul>
+                </div>
+                
+                <p>Expert in building autonomous agentic systems for risk assessment, portfolio analysis, and regulatory risk review using cutting-edge Gen-AI integration, multi-agent frameworks, and large language models. Proven capability to integrate and leverage advanced technologies (LLMs, MCP Servers, AWS, GCP Vertex, Gemini, Claude, Ollama) to deliver robust, real-time solutions for quantitative teams. Skilled at dynamic Python code generation, debugging, and execution, automated HTML/CSS reporting, and end-to-end deployment of cloud-based platforms.</p>
+                
+                <p class="credentials"><strong>Credentials:</strong> Two Engineering degrees, MBA coursework in Finance & Corporate Law (FGV, IBMEC), Harvard AI Certification, SmythOS AI Agent Engineer, FINRA Series 57, 32 Professional Certifications</p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section">
+            <h2 class="section-title"><span class="section-icon">💼</span> Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-info">
+                            <img src="https://logos-world.net/wp-content/uploads/2021/02/Citigroup-Logo.png" alt="Citigroup" class="company-logo">
+                            <span class="company-name">Citigroup / Citibank</span>
+                        </div>
+                        <div class="job-title">Quantitative Developer – GenAI Architect</div>
+                    </div>
+                    <span class="job-dates">Mar 2025 – Jan 2026</span>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Architected enterprise GenAI Ecosystem for portfolio analysis serving C-level operations across the institution.</li>
+                    <li>Designed and implemented agentic AI frameworks using Python and LangGraph, enabling autonomous reasoning and acting loops for complex financial workflows.</li>
+                    <li>Integrated multiple MCP (Model Context Protocol) servers for seamless tool orchestration across trading systems and data sources.</li>
+                    <li>Built intelligent agents for risk assessment, portfolio analysis, and regulatory risk review using multi-model architectures (Gemini, Claude).</li>
+                    <li>Developed, implemented, and supported large-scale platforms and agentic systems that operate across multiple departments, countries, companies, and portfolios, tailored for C-Level operations and decision-making.</li>
+                    <li>Program autonomous agents to interpret Quant queries, dynamically write, debug, and execute Python code in real time, and iteratively enhance solutions through runtime analysis.</li>
+                    <li>Develop agents capable of automatically generating and refining HTML/CSS visualizations, facilitating clearer interpretation of quantitative solutions for quants.</li>
+                    <li>Led end-to-end systems development: from ideation and initial design through programming, implementation, and deployment—including LLM model training and integration.</li>
+                    <li>Extensive hands-on experience with SQL, AWS (S3, EC2), Google Vertex AI, Gemini, Claude, building complex AI-powered platforms and agentic systems.</li>
+                    <li>Managed financial assets: Equity Options, Stocks, Credit, ETFs, Currencies, and Futures.</li>
+                    <li>Led a team of 7 high-performance Engineers throughout building the Ecosystem.</li>
+                    <li><strong>Saved quantitative research teams thousands of hours annually through intelligent automation of research workflows.</strong></li>
+                    <li><strong>Reduced time-to-insight for quantitative research from days to minutes through intelligent task decomposition and parallel AI agent execution via MCP protocol.</strong></li>
+                    <li>Collaborated with Quant Developers, Quant Analysts, Directors, Risk Analysts, Portfolio Managers, and Quant Traders, delivering transformative solutions to multi-disciplinary teams.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-info">
+                            <img src="https://www.abfs.tech/wp-content/uploads/2022/06/cropped-abfs-tech-600px.png" alt="ABFS TECH" class="company-logo">
+                            <span class="company-name">ABFS TECH</span>
+                        </div>
+                        <div class="job-title">Quant Researcher, Developer & AI Architect</div>
+                    </div>
+                    <span class="job-dates">March 2016 – Present</span>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Developed and implemented AI-driven trading systems outperforming the S&P 500 by 3X over 10 years.</li>
+                    <li>Engineered a grid system with ROI averaging 10% monthly, Sharpe Ratio of 4.7.</li>
+                    <li>Designed and implemented AI trading systems for hedge funds, brokerage firms, family offices, proprietary traders.</li>
+                    <li>API integrations for Charles Schwab, TD Ameritrade, Interactive Brokers, IG, FOREX.com, Pepperstone.</li>
+                    <li>Developed in Python, C#, C++, NinjaScript 8, MQL5, MQL4, ThinkScript, Pine Script.</li>
+                    <li>Programmed GenAI applications—Google Gemini, Anthropic's Claude, Opus, xAI's Grok, OpenAI's ChatGPT, Ollama.</li>
+                    <li>Integrated financial platforms, built smartphone applications, connected systems within financial markets.</li>
+                    <li>Extensive expertise with AWS cloud computing solutions.</li>
+                    <li>Worked closely with Portfolio Managers, Front Office, Middle Office, Back Office, and teams from multiple Hedge Funds, Family Offices, Banks, and other financial institutions.</li>
+                    <li>Automated anomaly detection and root cause analysis using GenAI.</li>
+                    <li><strong>Provided quant research, development, and technology services to multiple clients across the financial markets, collaborating and delivering solutions tailored for each client's unique requirements, diverse asset classes, and business strategies.</strong></li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-info">
+                            <img src="https://t3trading.com/wp-content/uploads/2021/03/t3-trading-logo-1024-x1024.png" alt="T3 Trading Group" class="company-logo">
+                            <span class="company-name">T3 Trading Group</span>
+                        </div>
+                        <div class="job-title">Quant Researcher & Developer (Part-Time)</div>
+                    </div>
+                    <span class="job-dates">Feb 2019 – Dec 2019</span>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Developed algorithmic trading solutions for Stocks, Equity Options, ETFs using machine learning/statistics.</li>
+                    <li>Built, backtested, optimized trading algorithms and financial performance tests in Python, SQL, C#, C++.</li>
+                    <li>Led API integrations for real-time trading and data workflows.</li>
+                    <li>Partnered with Portfolio Managers, Traders, Developers to deliver production strategies.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-info">
+                            <span class="company-name">Freelance Software Developer | Fully Remote</span>
+                        </div>
+                        <div class="job-title">Full-Stack Developer & Technical Consultant</div>
+                    </div>
+                    <span class="job-dates">July 2015 – February 2016</span>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Delivered custom software solutions for clients across financial services, e-commerce, and technology sectors.</li>
+                    <li>Built web applications and APIs using Python, C#, JavaScript, SQL with focus on scalable architecture and clean code.</li>
+                    <li>Developed trading tools and portfolio analytics dashboards for individual traders and small investment firms.</li>
+                    <li>Implemented database designs, RESTful APIs, and front-end interfaces for data visualization.</li>
+                    <li>Managed full project lifecycle from client requirements gathering through deployment and maintenance.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-info">
+                            <span class="company-name">Brinpa Investments and Participations</span>
+                        </div>
+                        <div class="job-title">Investments Director (Part-Time)</div>
+                    </div>
+                    <span class="job-dates">Jan 2006 – Jun 2015</span>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Managed early-stage investments, following up through final payout.</li>
+                    <li>Responsible for performance analysis and investment project selection.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-info">
+                            <span class="company-name">AEP Engineering</span>
+                        </div>
+                        <div class="job-title">Lead Engineer</div>
+                    </div>
+                    <span class="job-dates">Jan 2002 – Dec 2014</span>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Led a team of Engineers that designed, implemented, and maintained ISO 9000 and other Quality Assurance certifications with regular external audits, as a requirement for the Engineering firm to work with a bank.</li>
+                    <li>Built tools and dashboards to visualize and communicate data quality, performance monitoring, and insights.</li>
+                    <li>Strong knowledge in statistics, probabilities, statistical analysis, and probabilistic analysis.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Key Achievements Section -->
+        <section class="section">
+            <h2 class="section-title"><span class="section-icon">🏆</span> Key Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <strong>Agentic AI Framework & MCP Infrastructure:</strong>
+                    Planned, developed, and deployed enterprise agentic system with Model Context Protocol (MCP) architecture, building custom MCP servers and clients that orchestrate multiple AI operations and saved quantitative teams thousands of hours annually by automating research workflows
+                </div>
+                <div class="achievement-item">
+                    <strong>Execution Optimization:</strong>
+                    Reduced latency by 95% and improved implementation shortfall by 15% for equity options flow
+                </div>
+                <div class="achievement-item">
+                    <strong>Risk Model Deployment:</strong>
+                    Built ML-based risk models reducing portfolio drawdown by 18% while maintaining target returns
+                </div>
+                <div class="achievement-item">
+                    <strong>Quantitative Research:</strong>
+                    Developed systematic trading strategy with Sharpe Ratio of 4.7 and 10% average monthly returns over multi-year live trading period
+                </div>
+                <div class="achievement-item">
+                    <strong>3X S&P 500 Outperformance:</strong>
+                    AI-driven trading systems outperforming benchmark over 10-year backtest with rigorous walk-forward validation
+                </div>
+                <div class="achievement-item">
+                    <strong>Real-Time Risk Monitoring:</strong>
+                    Implemented production risk system alerting on portfolio breaches within 100ms of market data updates
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <h2 class="section-title"><span class="section-icon">💡</span> Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">MQL5</span>
+                        <span class="skill-tag">MQL4</span>
+                        <span class="skill-tag">NinjaScript 8</span>
+                        <span class="skill-tag">ThinkScript</span>
+                        <span class="skill-tag">Pine Script</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Software & Tools</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Amazon Web Services (AWS)</span>
+                        <span class="skill-tag">Google Gemini</span>
+                        <span class="skill-tag">Anthropic's Claude</span>
+                        <span class="skill-tag">Opus</span>
+                        <span class="skill-tag">Sonnet</span>
+                        <span class="skill-tag">OpenAI's ChatGPT</span>
+                        <span class="skill-tag">Ollama</span>
+                        <span class="skill-tag">Metatrader</span>
+                        <span class="skill-tag">Charles Schwab Trading Platform</span>
+                        <span class="skill-tag">TradingView</span>
+                        <span class="skill-tag">Alveo C# Platform</span>
+                        <span class="skill-tag">Unity</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Quantitative Analysis</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Algorithmic Trading</span>
+                        <span class="skill-tag">Quantitative Research</span>
+                        <span class="skill-tag">Mathematical Modeling</span>
+                        <span class="skill-tag">Statistical Analysis</span>
+                        <span class="skill-tag">Risk Management</span>
+                        <span class="skill-tag">Portfolio Optimization</span>
+                        <span class="skill-tag">Backtesting</span>
+                        <span class="skill-tag">Derivatives Pricing</span>
+                        <span class="skill-tag">Monte Carlo Simulation</span>
+                        <span class="skill-tag">Time Series Analysis</span>
+                        <span class="skill-tag">Financial Algorithms</span>
+                        <span class="skill-tag">Options & Futures</span>
+                        <span class="skill-tag">ETFs & Indexes</span>
+                        <span class="skill-tag">Pearson Correlation Analysis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Trading Strategies</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Statistical Arbitrage</span>
+                        <span class="skill-tag">Pairs Trading</span>
+                        <span class="skill-tag">Mean Reversion</span>
+                        <span class="skill-tag">Momentum</span>
+                        <span class="skill-tag">Market Making</span>
+                        <span class="skill-tag">Execution Algorithms</span>
+                        <span class="skill-tag">Grid Trading</span>
+                        <span class="skill-tag">Trend Following</span>
+                        <span class="skill-tag">target achievement</span>
+                        <span class="skill-tag">Triangular Arbitrage</span>
+                        <span class="skill-tag">Dynamic Circular Arbitrage</span>
+                        <span class="skill-tag">300+ trading strategies developed</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Risk Management</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">VaR (Value at Risk)</span>
+                        <span class="skill-tag">CVaR (Conditional Value at Risk)</span>
+                        <span class="skill-tag">Greeks Analysis (Delta, Gamma, Theta, Vega)</span>
+                        <span class="skill-tag">Scenario Analysis</span>
+                        <span class="skill-tag">Stress Testing</span>
+                        <span class="skill-tag">Drawdown Control</span>
+                        <span class="skill-tag">Position Sizing</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Artificial Intelligence (AI)</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">AI Trading Systems</span>
+                        <span class="skill-tag">Predictive Modeling</span>
+                        <span class="skill-tag">Neural Networks</span>
+                        <span class="skill-tag">Model Optimization</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Natural Language Processing</span>
+                        <span class="skill-tag">Large Language Models (LLM)</span>
+                        <span class="skill-tag">Generative AI (GenAI)</span>
+                        <span class="skill-tag">Agentic AI</span>
+                        <span class="skill-tag">LangGraph</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">LangSmith</span>
+                        <span class="skill-tag">Model Context Protocol (MCP)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Financial Expertise</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Financial Engineering</span>
+                        <span class="skill-tag">Quantitative Finance</span>
+                        <span class="skill-tag">Financial Modeling</span>
+                        <span class="skill-tag">Cryptocurrency Trading</span>
+                        <span class="skill-tag">Forex Trading</span>
+                        <span class="skill-tag">Equities</span>
+                        <span class="skill-tag">CFDs</span>
+                        <span class="skill-tag">Portfolio Management</span>
+                        <span class="skill-tag">Financial Analysis</span>
+                        <span class="skill-tag">Equity Options</span>
+                        <span class="skill-tag">Stocks</span>
+                        <span class="skill-tag">Futures</span>
+                        <span class="skill-tag">Futures Options</span>
+                        <span class="skill-tag">Credit Instruments</span>
+                        <span class="skill-tag">Currencies</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Other Skills</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">API Integration</span>
+                        <span class="skill-tag">Mobile App Development</span>
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">Client Communication</span>
+                        <span class="skill-tag">Strong Analytical & Research Skills</span>
+                        <span class="skill-tag">Problem-solving</span>
+                        <span class="skill-tag">Excellent Written & Verbal Communication</span>
+                        <span class="skill-tag">Low Latency Development</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Playwright</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section">
+            <h2 class="section-title"><span class="section-icon">🎓</span> Education</h2>
+            <div class="education-grid">
+                <div class="education-item">
+                    <h4>Harvard University</h4>
+                    <div class="degree">Certification, Artificial Intelligence in Python</div>
+                    <div class="year">August 2023 – January 2024</div>
+                </div>
+                <div class="education-item">
+                    <h4>Federal Fluminense University (UFF)</h4>
+                    <div class="degree">1st Engineering Degree</div>
+                    <div class="year">Diploma, 2002</div>
+                </div>
+                <div class="education-item">
+                    <h4>UNESA</h4>
+                    <div class="degree">2nd Engineering Degree</div>
+                    <div class="year">Diploma, 2014</div>
+                </div>
+                <div class="education-item">
+                    <h4>Ibmec</h4>
+                    <div class="degree">Attended 50 credits towards MBA, Finance</div>
+                    <div class="year">2005–2006</div>
+                </div>
+                <div class="education-item">
+                    <h4>FGV – Getulio Vargas Foundation</h4>
+                    <div class="degree">Attended 36 credits towards MBA, Corporate Law</div>
+                    <div class="year">2003–2004</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section">
+            <h2 class="section-title"><span class="section-icon">📜</span> Certifications & Licenses</h2>
+            
+            <div class="cert-section">
+                <h4>AI & Machine Learning Certifications</h4>
+                <table class="cert-table">
+                    <thead>
+                        <tr>
+                            <th>Certification / License</th>
+                            <th>Issuing Organization</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Model Context Protocol: Advanced Topics</td><td>Anthropic</td><td>Jan 2026</td></tr>
+                        <tr><td>Beyond Vibe Coding with Google Gemini: Become a Deliberate Developer</td><td>LinkedIn Learning</td><td>Dec 2025</td></tr>
+                        <tr><td>AI Agent Engineer</td><td>SmythOS</td><td>Sep 2024</td></tr>
+                        <tr><td>Harvard University Certification, Artificial Intelligence in Python</td><td>Harvard University</td><td>Jan 2024</td></tr>
+                        <tr><td>Prompt Engineering for ChatGPT</td><td>Vanderbilt University</td><td>Feb 2024</td></tr>
+                        <tr><td>Artificial Intelligence Certification</td><td>Google Launchpad</td><td>—</td></tr>
+                        <tr><td>Machine Learning Certification</td><td>Google Launchpad</td><td>—</td></tr>
+                        <tr><td>Data Science Certification</td><td>Google Launchpad</td><td>—</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="cert-section">
+                <h4>AWS Certifications (6)</h4>
+                <div class="cert-compact">
+                    <span class="cert-badge">API Serverless Gateway Certification</span>
+                    <span class="cert-badge">AWS Cloud Computing Certification</span>
+                    <span class="cert-badge">Decoupled Applications Certification</span>
+                    <span class="cert-badge">Deploying & Scaling Applications with Amazon Lightsail Certificate</span>
+                    <span class="cert-badge">Lambda Foundations Certification</span>
+                    <span class="cert-badge">MySQL Certificate</span>
+                </div>
+            </div>
+
+            <div class="cert-section">
+                <h4>Google Launchpad Certifications (18)</h4>
+                <div class="cert-compact">
+                    <span class="cert-badge">Artificial Intelligence Certification</span>
+                    <span class="cert-badge">Blockchain Certification</span>
+                    <span class="cert-badge">Cybersecurity Certification</span>
+                    <span class="cert-badge">Data Science Certification</span>
+                    <span class="cert-badge">Docker Certification Course</span>
+                    <span class="cert-badge">Firebase Certification</span>
+                    <span class="cert-badge">GIT Certification</span>
+                    <span class="cert-badge">HoneyCode Certification</span>
+                    <span class="cert-badge">Machine Learning Certification</span>
+                    <span class="cert-badge">Node.js Certification</span>
+                    <span class="cert-badge">Programming in C# Certification</span>
+                    <span class="cert-badge">Python 3 Certificate</span>
+                    <span class="cert-badge">Python Advanced Certification</span>
+                    <span class="cert-badge">SQL Programming Certification</span>
+                    <span class="cert-badge">Social Media Marketing Certification Course</span>
+                    <span class="cert-badge">Solidity Programming for Ethereum Blockchain Certification</span>
+                    <span class="cert-badge">Unity Programming Certificate</span>
+                    <span class="cert-badge">Website Building Certification Course</span>
+                </div>
+            </div>
+
+            <div class="cert-section">
+                <h4>Other Certifications & Licenses</h4>
+                <div class="cert-compact">
+                    <span class="cert-badge">Licensed Engineer – Crea-RJ</span>
+                    <span class="cert-badge">PHP Programming Certification – Sololearn</span>
+                    <span class="cert-badge">Series 57 - Securities Trader Representative Exam License (previously held) – FINRA</span>
+                    <span class="cert-badge">WooCommerce Themes Certification</span>
+                </div>
+            </div>
+
+            <div class="cert-total">Total: 32 Professional Certifications</div>
+        </section>
+
+        <!-- Publications Section -->
+        <section class="section">
+            <h2 class="section-title"><span class="section-icon">📚</span> Publications</h2>
+            <div class="publication-item">
+                <h4>Cryptocurrency – Starter's Guide for Traders and Investors</h4>
+                <div class="publication-details">
+                    ISBN: 978-1-63901-260-2<br>
+                    Publisher: Primedia<br>
+                    Publication Date: May 2021<br>
+                    <a href="https://cryptocurrency-book.com/">Available at: https://cryptocurrency-book.com/</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
