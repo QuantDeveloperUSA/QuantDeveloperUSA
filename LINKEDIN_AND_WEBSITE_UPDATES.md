@@ -38,7 +38,7 @@ What I bring to the table:
 
 Credentials: 32 professional certifications including Harvard AI, AWS Cloud Computing, Google Gemini (Vibe Coding), SmythOS AI Agent Engineer, and Vanderbilt Prompt Engineering
 
-📧 admin@abfs.tech | 📱 (347) 688-8396 | 🌐 github.com/QuantDeveloperUSA
+📧 admin@abfs.tech | 🌐 github.com/QuantDeveloperUSA
 `
 
 ---

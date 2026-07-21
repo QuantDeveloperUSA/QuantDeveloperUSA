@@ -8,7 +8,6 @@
 
 ### 📞 Contact
 
-| **Phone** | +1 (347) 688-8396 |
 |-----------|-------------------|
 | **Email** | [admin@abfs.tech](mailto:admin@abfs.tech) |
 | **Website** | [www.abfs.tech](https://www.abfs.tech) |
