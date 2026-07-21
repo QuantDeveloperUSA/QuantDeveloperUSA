@@ -38,7 +38,7 @@ What I bring to the table:
 
 Credentials: 32 professional certifications including Harvard AI, AWS Cloud Computing, Google Gemini (Vibe Coding), SmythOS AI Agent Engineer, and Vanderbilt Prompt Engineering
 
-📧 admin@abfs.tech | 🌐 github.com/QuantDeveloperUSA
+📧 admin@abfs.tech | 🌐 github.com/robertoeisenlohr
 `
 
 ---
@@ -128,7 +128,7 @@ Led architecture and development of an enterprise GenAI Ecosystem for portfolio 
 ### 7. Featured Section
 
 **Recommended Featured Items:**
-1. Link to GitHub profile (github.com/QuantDeveloperUSA)
+1. Link to GitHub profile (github.com/robertoeisenlohr)
 2. Link to Cryptocurrency book (cryptocurrency-book.com)
 
 ---

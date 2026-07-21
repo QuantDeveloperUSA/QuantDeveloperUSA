@@ -236,7 +236,17 @@ _Jan 2002 – Dec 2014_
 
 ---
 
-## 📚 Publications
+## 📚 Books
+
+- **The Income Wheel: A Quant's Evidence-Based System for Covered Calls, Cash-Secured Puts, and Real Monthly Options Income**  
+  ISBN: 9798187809783  
+  Publication Date: July 2026  
+  [Available at: https://www.amazon.com/dp/B0H9K4T6XQ](https://www.amazon.com/dp/B0H9K4T6XQ)
+
+- **The Peak 65 Playbook**  
+  ISBN: 9798187806478  
+  Publication Date: July 2026  
+  [Available at: https://www.amazon.com/dp/B0H9KJW2BQ](https://www.amazon.com/dp/B0H9KJW2BQ)
 
 - **Cryptocurrency – Starter's Guide for Traders and Investors**  
   ISBN: 978-1-63901-260-2  
